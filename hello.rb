@@ -8,3 +8,8 @@ end
 get '/secret' do
   'Now I can change it'
 end
+
+get '/hello' do
+  @visitor = params[:name]
+  erb :index
+end
